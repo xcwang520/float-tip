@@ -2,14 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import vueScrollTo from 'vue-scrollTo'
-import babelpolyfill from 'babel-polyfill'
-import 'font-awesome/css/font-awesome.min.css'
 import Tip from '../index.js'
 
 Vue.config.productionTip = false
 
-Vue.use(vueScrollTo);
 Vue.use(Tip);
 
 /* eslint-disable no-new */
