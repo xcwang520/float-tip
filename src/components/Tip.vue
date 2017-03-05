@@ -17,7 +17,7 @@ export default {
       msg: '联系信息1111111',
       defaultOpts: {
         top: {
-          yype: 'always',
+          type: 'always',
           el: "'#header'",
           icon: 'fa fa-chevron-up fa-3x',
           text: "返回顶部"

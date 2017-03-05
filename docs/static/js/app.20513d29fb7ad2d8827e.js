@@ -95,7 +95,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       msg: '联系信息1111111',
       defaultOpts: {
         top: {
-          yype: 'always',
+          type: 'always',
           el: "'#header'",
           icon: 'fa fa-chevron-up fa-3x',
           text: "返回顶部"
@@ -254,4 +254,4 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
 /***/ })
 
 },[53]);
-//# sourceMappingURL=app.03a2fc60bf3988e77fe4.js.map
+//# sourceMappingURL=app.20513d29fb7ad2d8827e.js.map
