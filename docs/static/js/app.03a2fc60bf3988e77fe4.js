@@ -179,7 +179,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "app"
     }
-  }, [_c('tip', {
+  }, [_vm._v("\n  手机/微信:17074221129 EMAIL:xcwang@vip.qq.com\n  "), _c('tip', {
     attrs: {
       "opts": _vm.opts
     }
@@ -254,4 +254,4 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
 /***/ })
 
 },[53]);
-//# sourceMappingURL=app.53f0fcd064c18dbe9415.js.map
+//# sourceMappingURL=app.03a2fc60bf3988e77fe4.js.map
