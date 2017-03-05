@@ -3,7 +3,7 @@
     <ul>
       <li><i :class="sets.share.icon" aria-hidden="true"><span>{{sets.share.text}}</span></i></li>
       <li><i :class="sets.star.icon" aria-hidden="true"><span>{{sets.star.text}}</span></i></li>
-      <li v-if="showTop" :v-scroll-to="sets.top.el"><i :class="sets.top.icon" aria-hidden="true"><span class="back-top">{{sets.top.text}}</span></i></li>
+      <li v-if="showTop" v-scroll-to="sets.top.el"><i :class="sets.top.icon" aria-hidden="true"><span class="back-top">{{sets.top.text}}</span></i></li>
     </ul>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
       defaultOpts: {
         top: {
           type: 'always',
-          el: "'#header'",
+          el: "#header",
           icon: 'fa fa-chevron-up fa-3x',
           text: "返回顶部"
         },

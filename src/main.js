@@ -3,8 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import vueScrollTo from 'vue-scrollTo'
+import babelpolyfill from 'babel-polyfill'
 import 'font-awesome/css/font-awesome.min.css'
-import Tip from '../'
+import Tip from '../index.js'
 
 Vue.config.productionTip = false
 

@@ -1,14 +1,14 @@
 webpackJsonp([1,2],{
 
-/***/ 10:
+/***/ 124:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_components_Tip_vue__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_components_Tip_vue__ = __webpack_require__(346);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_components_Tip_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__src_components_Tip_vue__);
 
 
-__WEBPACK_IMPORTED_MODULE_0__src_components_Tip_vue___default.a.version = '2.1.1';
+__WEBPACK_IMPORTED_MODULE_0__src_components_Tip_vue___default.a.version = '1.0.2';
 
 __WEBPACK_IMPORTED_MODULE_0__src_components_Tip_vue___default.a.install = (Vue) => {
   Vue.component('tip', __WEBPACK_IMPORTED_MODULE_0__src_components_Tip_vue___default.a);
@@ -23,25 +23,25 @@ if (typeof window !== 'undefined') {
 
 /***/ }),
 
-/***/ 11:
+/***/ 126:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 12:
+/***/ 127:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(46)
+__webpack_require__(342)
 
-var Component = __webpack_require__(9)(
+var Component = __webpack_require__(123)(
   /* script */
-  __webpack_require__(15),
+  __webpack_require__(130),
   /* template */
-  __webpack_require__(49),
+  __webpack_require__(347),
   /* scopeId */
   null,
   /* cssModules */
@@ -53,7 +53,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 15:
+/***/ 130:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -66,7 +66,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       opts: {
         top: {
-          text: "顶部"
+          text: "返回顶部"
         }
       }
     };
@@ -77,12 +77,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 16:
+/***/ 131:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_core_js_object_assign__);
 
 
@@ -96,7 +96,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       defaultOpts: {
         top: {
           type: 'always',
-          el: "'#header'",
+          el: "#header",
           icon: 'fa fa-chevron-up fa-3x',
           text: "返回顶部"
         },
@@ -134,32 +134,32 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 46:
+/***/ 342:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 47:
+/***/ 343:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 48:
+/***/ 346:
 /***/ (function(module, exports, __webpack_require__) {
 
 
 /* styles */
-__webpack_require__(47)
+__webpack_require__(343)
 
-var Component = __webpack_require__(9)(
+var Component = __webpack_require__(123)(
   /* script */
-  __webpack_require__(16),
+  __webpack_require__(131),
   /* template */
-  __webpack_require__(50),
+  __webpack_require__(348),
   /* scopeId */
   "data-v-7706dfa0",
   /* cssModules */
@@ -171,7 +171,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 49:
+/***/ 347:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -179,7 +179,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "app"
     }
-  }, [_vm._v("\n  手机/微信:17074221129 EMAIL:xcwang@vip.qq.com\n  "), _c('tip', {
+  }, [_c('div', {
+    staticClass: "content",
+    attrs: {
+      "id": "header"
+    }
+  }, [_vm._v("\n    手机/微信:17074221129 EMAIL:xcwang@vip.qq.com\n  ")]), _vm._v(" "), _c('tip', {
     attrs: {
       "opts": _vm.opts
     }
@@ -188,7 +193,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ }),
 
-/***/ 50:
+/***/ 348:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -205,9 +210,12 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "aria-hidden": "true"
     }
   }, [_c('span', [_vm._v(_vm._s(_vm.sets.star.text))])])]), _vm._v(" "), (_vm.showTop) ? _c('li', {
-    attrs: {
-      "v-scroll-to": _vm.sets.top.el
-    }
+    directives: [{
+      name: "scroll-to",
+      rawName: "v-scroll-to",
+      value: (_vm.sets.top.el),
+      expression: "sets.top.el"
+    }]
   }, [_c('i', {
     class: _vm.sets.top.icon,
     attrs: {
@@ -220,19 +228,22 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 
 /***/ }),
 
-/***/ 53:
+/***/ 350:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App__ = __webpack_require__(127);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_scrollTo__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_scrollTo__ = __webpack_require__(128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_scrollTo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_scrollTo__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_font_awesome_css_font_awesome_min_css__ = __webpack_require__(11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_font_awesome_css_font_awesome_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_font_awesome_css_font_awesome_min_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4____ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_polyfill__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_babel_polyfill___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_babel_polyfill__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_font_awesome_css_font_awesome_min_css__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_font_awesome_css_font_awesome_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_font_awesome_css_font_awesome_min_css__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__index_js__ = __webpack_require__(124);
+
 
 
 
@@ -243,7 +254,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].config.productionTip = false;
 
 __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_2_vue_scrollTo___default.a);
-__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_4____["a" /* default */]);
+__WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */].use(__WEBPACK_IMPORTED_MODULE_5__index_js__["a" /* default */]);
 
 new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
   el: '#app',
@@ -253,5 +264,5 @@ new __WEBPACK_IMPORTED_MODULE_0_vue__["a" /* default */]({
 
 /***/ })
 
-},[53]);
-//# sourceMappingURL=app.20513d29fb7ad2d8827e.js.map
+},[350]);
+//# sourceMappingURL=app.28c6fb748d4a1519da41.js.map

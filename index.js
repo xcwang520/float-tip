@@ -1,6 +1,6 @@
 import Tip from './src/components/Tip.vue';
 
-Tip.version = '2.1.1';
+Tip.version = '1.0.2';
 
 Tip.install = (Vue) => {
   Vue.component('tip', Tip);

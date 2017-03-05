@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    手机/微信:17074221129 EMAIL:xcwang@vip.qq.com
+    <div class="content" id="header">
+      手机/微信:17074221129 EMAIL:xcwang@vip.qq.com
+    </div>
     <tip :opts="opts"></tip>
   </div>
 </template>
@@ -14,7 +16,7 @@ export default {
     return {
       opts: {
         top: {
-          text: "顶部"
+          text: "返回顶部"
         }
       }
     }
@@ -25,6 +27,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style >
+.content {
+  background: #00FF00 url(./assets/test.jpg) top;
+  height: 2000px;
+}
 </style>
