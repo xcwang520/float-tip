@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    手机/微信:17074221129 EMAIL:xcwang@vip.qq.com
     <tip :opts="opts"></tip>
   </div>
 </template>
