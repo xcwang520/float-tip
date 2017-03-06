@@ -1,5 +1,3 @@
-'use strict'
-
 import vueScrollTo from 'vue-scrollTo'
 import Tip from './components/Tip.vue';
 import 'font-awesome/css/font-awesome.min.css'

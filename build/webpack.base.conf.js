@@ -9,8 +9,8 @@ function resolve (dir) {
 
 module.exports = {
   entry: {
-    //app: './src/main.js'
-    float_tip: './src/index.js'
+    app: './src/main.js',
+    app1: './src/index.js'
   },
   output: {
     path: config.build.assetsRoot,
